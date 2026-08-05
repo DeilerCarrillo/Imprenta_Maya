@@ -111,8 +111,8 @@ const HomePage = () => {
               por Imprenta Maya, incluyendo productos corporativos, papelería y
               diferentes acabados.
             </p>
-            <Link className="button-primary mt-7" to="/galeria">
-              Ver galería
+            <Link className="button-primary mt-7" to="/catalogo">
+              Ver Catálogo
             </Link>
           </div>
 
