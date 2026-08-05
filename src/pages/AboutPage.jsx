@@ -47,7 +47,7 @@ const AboutPage = () => {
           </div>
 
           <div className="rounded-3xl bg-white p-8 shadow-xl">
-            <img className="mx-auto h-72 w-full object-contain" src="/logo.png" alt="Logo de Imprenta Maya" />
+            <img className="mx-auto h-72 w-full object-contain" src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo de Imprenta Maya" />
           </div>
         </div>
       </section>
@@ -70,7 +70,7 @@ const AboutPage = () => {
           </article>
 
           <article className="overflow-hidden rounded-3xl">
-            <img className="h-full min-h-96 w-full object-cover" src="/local-imprenta.png" alt="Fachada de Imprenta Maya" />
+            <img className="h-full min-h-96 w-full object-cover" src={`${import.meta.env.BASE_URL}local-imprenta.png`} alt="Fachada de Imprenta Maya" />
           </article>
         </div>
       </section>

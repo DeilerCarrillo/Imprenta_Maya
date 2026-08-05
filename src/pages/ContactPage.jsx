@@ -52,7 +52,11 @@ ${form.mensaje}
       <section className="page-section">
         <div className="page-container grid overflow-hidden rounded-3xl bg-[#202020] shadow-2xl lg:grid-cols-[0.9fr_1.1fr]">
           <div className="text-white">
-            <img className="h-80 w-full object-cover lg:h-[430px]" src="/local-imprenta.png" alt="Fachada de Imprenta Maya" />
+            <img
+              className="h-80 w-full object-cover lg:h-[430px]"
+              src={`${import.meta.env.BASE_URL}local-imprenta.png`}
+              alt="Fachada de Imprenta Maya"
+            />
             <div className="p-8">
               <span className="text-xs font-bold tracking-[0.14em] text-[#f2a33a] uppercase">Visítanos</span>
               <h2 className="mt-4 text-2xl font-extrabold">Ubicación y contacto</h2>

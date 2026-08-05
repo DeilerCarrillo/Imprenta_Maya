@@ -52,7 +52,7 @@ const HomePage = () => {
             <div className="absolute -top-5 -left-5 h-28 w-28 rounded-full bg-[#f2a33a]/20 blur-2xl" />
             <img
               className="relative h-[460px] w-full rounded-3xl object-cover shadow-2xl"
-              src="/local-imprenta.png"
+              src={`${import.meta.env.BASE_URL}local-imprenta.png`}
               alt="Fachada de Imprenta Maya"
             />
             <div className="absolute right-5 bottom-5 left-5 rounded-2xl border border-white/10 bg-black/75 p-5 backdrop-blur">
@@ -119,7 +119,7 @@ const HomePage = () => {
           <div className="rounded-3xl bg-[#303030] p-8 text-white shadow-xl">
             <img
               className="mx-auto h-56 w-full object-contain"
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Logo de Imprenta Maya"
             />
             <p className="mt-6 text-center leading-7 text-neutral-300">

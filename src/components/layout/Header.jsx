@@ -21,11 +21,11 @@ const Header = () => {
       <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur">
         <div className="page-container relative flex min-h-20 items-center justify-between gap-5">
           <Link to="/inicio" onClick={closeMenu} aria-label="Ir al inicio">
-            <img
-              className="h-14 w-36 object-contain"
-              src="/logo.png"
-              alt="Logo de Imprenta Maya"
-            />
+          <img
+            className="h-14 w-36 object-contain"
+            src={`${import.meta.env.BASE_URL}logo.png`}
+            alt="Logo de Imprenta Maya"
+          />
           </Link>
 
           <button

@@ -8,9 +8,9 @@ const Footer = () => {
       <div className="page-container grid gap-10 py-14 md:grid-cols-3">
         <div>
           <div className="mb-5 inline-flex rounded-xl bg-white p-3">
-            <img
+           <img
               className="h-20 w-40 object-contain"
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Imprenta Maya"
             />
           </div>

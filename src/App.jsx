@@ -14,16 +14,17 @@ function App() {
     <>
       <ScrollToTop />
 
-      <Routes>
-    <Route element={<Layout />}>
-    <Route index element={<Navigate to="/inicio" replace />} />
+     <Routes>
+  <Route element={<Layout />}>
+    <Route index element={<HomePage />} />
     <Route path="/inicio" element={<HomePage />} />
     <Route path="/nosotros" element={<AboutPage />} />
     <Route path="/servicios" element={<ServicesPage />} />
     <Route path="/catalogo" element={<CatalogPage />} />
+    <Route path="/galeria" element={<GalleryPage />} />
     <Route path="/cotizacion" element={<QuotePage />} />
     <Route path="/contacto" element={<ContactPage />} />
-    </Route>
+  </Route>
   <Route path="*" element={<NotFoundPage />} />
 </Routes>
     </>
