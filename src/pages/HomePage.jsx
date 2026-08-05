@@ -42,9 +42,6 @@ const HomePage = () => {
               <Link className="button-primary" to="/cotizacion">
                 Solicitar cotización
               </Link>
-              <Link className="button-secondary" to="/galeria">
-                Ver trabajos realizados
-              </Link>
             </div>
           </div>
 
