@@ -1,6 +1,11 @@
-import { Navigate, Route, Routes } from "react-router";
+import {
+  Route,
+  Routes
+} from "react-router";
+
 import Layout from "./components/layout/Layout.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+
 import HomePage from "./pages/HomePage.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
@@ -14,22 +19,48 @@ function App() {
     <>
       <ScrollToTop />
 
-     <Routes>
-  <Route element={<Layout />}>
-    <Route index element={<HomePage />} />
-    <Route path="/inicio" element={<HomePage />} />
-    <Route path="/nosotros" element={<AboutPage />} />
-    <Route path="/servicios" element={<ServicesPage />} />
-    <Route path="/catalogo" element={<CatalogPage />} />
-    <Route path="/galeria" element={<GalleryPage />} />
-    <Route path="/cotizacion" element={<QuotePage />} />
-    <Route path="/contacto" element={<ContactPage />} />
-  </Route>
-  <Route path="*" element={<NotFoundPage />} />
-</Routes>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<HomePage />} />
+
+          <Route
+            path="/inicio"
+            element={<HomePage />}
+          />
+
+          <Route
+            path="/nosotros"
+            element={<AboutPage />}
+          />
+
+          <Route
+            path="/servicios"
+            element={<ServicesPage />}
+          />
+
+          <Route
+            path="/catalogo"
+            element={<CatalogPage />}
+          />
+
+          <Route
+            path="/cotizacion"
+            element={<QuotePage />}
+          />
+
+          <Route
+            path="/contacto"
+            element={<ContactPage />}
+          />
+        </Route>
+
+        <Route
+          path="*"
+          element={<NotFoundPage />}
+        />
+      </Routes>
     </>
   );
 }
 
-export default App; 
-
+export default App;
