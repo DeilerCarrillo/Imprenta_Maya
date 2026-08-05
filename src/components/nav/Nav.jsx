@@ -5,7 +5,6 @@ const links = [
   { text: "Nosotros", to: "/nosotros" },
   { text: "Servicios", to: "/servicios" },
   { text: "Catálogo", to: "/catalogo" },
-  { text: "Galería", to: "/galeria" },
   { text: "Cotización", to: "/cotizacion" },
   { text: "Contacto", to: "/contacto" },
 ];
