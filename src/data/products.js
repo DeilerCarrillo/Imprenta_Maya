@@ -1,17 +1,12 @@
-const crearImagenTemporal = (texto) => {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="500">
-      <rect width="100%" height="100%" fill="#f5f1e9"/>
-      <rect x="40" y="40" width="720" height="420" rx="30" fill="#202020"/>
-      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        font-family="Arial" font-size="44" font-weight="bold" fill="#f2a33a">
-        ${texto}
-      </text>
-    </svg>
-  `;
-
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-};
+import tarjetasImage from "../images/productos/tarjetas.jpg";
+import facturasImage from "../images/productos/facturas.jpg";
+import carpetasImage from "../images/productos/carpetas.jpg";
+import hojasMembretadasImage from "../images/productos/hojas-membretadas.jpg";
+import talonariosImage from "../images/productos/talonarios.jpg";
+import volantesImage from "../images/productos/volantes.jpg";
+import folletosImage from "../images/productos/folletos.jpg";
+import catalogosImage from "../images/productos/catalogos.jpg";
+import bannersImage from "../images/productos/banners.jpg";
 
 export const products = [
   {
@@ -20,7 +15,7 @@ export const products = [
     category: "Impresión Corporativa",
     description:
       "Tarjetas personalizadas para profesionales, empresas, comercios y emprendimientos.",
-    image: crearImagenTemporal("Tarjetas"),
+    image: tarjetasImage,
   },
   {
     id: 2,
@@ -28,7 +23,7 @@ export const products = [
     category: "Impresión Corporativa",
     description:
       "Facturas impresas y personalizadas de acuerdo con las necesidades de cada negocio.",
-    image: crearImagenTemporal("Facturas"),
+    image: facturasImage,
   },
   {
     id: 3,
@@ -36,7 +31,7 @@ export const products = [
     category: "Impresión Corporativa",
     description:
       "Carpetas corporativas para documentos, presentaciones, propuestas y reuniones.",
-    image: crearImagenTemporal("Carpetas"),
+    image: carpetasImage,
   },
   {
     id: 4,
@@ -44,7 +39,7 @@ export const products = [
     category: "Impresión Corporativa",
     description:
       "Papelería con la identidad visual y datos principales de la empresa.",
-    image: crearImagenTemporal("Hojas"),
+    image: hojasMembretadasImage,
   },
   {
     id: 5,
@@ -52,7 +47,7 @@ export const products = [
     category: "Impresión Corporativa",
     description:
       "Talonarios personalizados para recibos, órdenes, controles y comprobantes.",
-    image: crearImagenTemporal("Talonarios"),
+    image: talonariosImage,
   },
   {
     id: 6,
@@ -60,7 +55,7 @@ export const products = [
     category: "Papelería",
     description:
       "Volantes impresos para promociones, actividades, productos y servicios.",
-    image: crearImagenTemporal("Volantes"),
+    image: volantesImage,
   },
   {
     id: 7,
@@ -68,7 +63,7 @@ export const products = [
     category: "Papelería",
     description:
       "Folletos informativos y promocionales con diseño personalizado.",
-    image: crearImagenTemporal("Folletos"),
+    image: folletosImage,
   },
   {
     id: 8,
@@ -76,7 +71,7 @@ export const products = [
     category: "Papelería",
     description:
       "Catálogos para presentar productos y servicios de manera clara y organizada.",
-    image: crearImagenTemporal("Catálogos"),
+    image: catalogosImage,
   },
   {
     id: 9,
@@ -84,6 +79,6 @@ export const products = [
     category: "Papelería",
     description:
       "Banners para negocios, promociones, actividades, interiores y exteriores.",
-    image: crearImagenTemporal("Banners"),
+    image: bannersImage,
   },
 ];
